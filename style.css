@@ -1,0 +1,106 @@
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.identity {
+	position: relative;
+	z-index: 1;
+}
+
+.identity .fingerprint {
+	position: fixed;
+	width: 150px;
+	top: calc(50% - 75px);
+	left: calc(50% - 75px);
+}
+
+.identity .drmouse {
+	position: fixed;
+	width: 80px;
+}
+
+.drmouse-1 { top: 20px; left: 20px; }
+.drmouse-2 { top: 20px; right: 20px; }
+.drmouse-3 { bottom: 20px; left: 20px; }
+.drmouse-4 { bottom: 20px; right: 20px; }
+
+.spin {
+	-webkit-animation: spin 4s linear infinite;
+	-moz-animation: spin 4s linear infinite;
+	animation: spin 4s linear infinite;
+}
+
+.zoom {
+	-webkit-animation: zoom 1s linear infinite;
+	-moz-animation: zoom 1s linear infinite;
+	animation: zoom 1s linear infinite;	
+}
+
+.safe {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	background: #333333;
+	z-index: 2;
+	bottom: 100%;
+
+	-webkit-transition: bottom 1s ease-in-out;
+	-moz-transition: bottom 1s ease-in-out;
+	-o-transition: bottom 1s ease-in-out;
+	transition: bottom 1s ease-in-out;
+}
+
+.safe-down {
+	bottom: 0;
+}
+
+.safe {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.row {
+	flex-grow: 1;
+	display: flex;
+	justify-content: space-between;
+}
+.button {
+	font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+	width: 30%;			
+	margin-bottom: 15px;
+	border-radius: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 45px;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+}
+.pin-display {
+	font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+	color: #32cd32;
+	font-size: 70px;
+	align-items: center;
+	justify-content: center;
+}
