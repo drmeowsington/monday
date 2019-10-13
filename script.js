@@ -41,7 +41,6 @@ function rotateCats(on) {
 }
 
 function fingerIn(e) {
-	new Audio('scan.mp3').play();
 	timeout = setTimeout(function() {
 		scanCompleted();
 	}, 10 * 1000);
@@ -49,6 +48,7 @@ function fingerIn(e) {
 	rotateCats(true);
 	e.preventDefault();
 	e.stopPropagation();
+	new Audio('scan.mp3').play();
 }
 
 function fingerOut() {
