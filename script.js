@@ -43,7 +43,7 @@ function rotateCats(on) {
 function fingerIn(e) {
 	timeout = setTimeout(function() {
 		scanCompleted();
-	}, 10 * 1000);
+	}, 4 * 1000);
 	fingerprint.classList.add('zoom');
 	rotateCats(true);
 	e.preventDefault();
