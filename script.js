@@ -48,7 +48,6 @@ function fingerIn(e) {
 	rotateCats(true);
 	e.preventDefault();
 	e.stopPropagation();
-	new Audio('scan.mp3').play();
 }
 
 function fingerOut() {
