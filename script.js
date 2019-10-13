@@ -20,7 +20,7 @@ function buttonClicked(event) {
 		pin += item;
 	}
 	if (pin.length === 4) {
-		if (pin === '2018') {
+		if (pin === '1971') {
 			alert('Koko! Kijk in de kofferbak van de UP! Mail mij welke letter u gevonden heeft! (delen met collega\'s!');
 		} else {
 			pin = '-';
