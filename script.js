@@ -20,8 +20,8 @@ function buttonClicked(event) {
 		pin += item;
 	}
 	if (pin.length === 4) {
-		if (pin === '3456') {
-			alert('Kijk in de kofferbak van de UP! Mail mij welke letter u gevonden heeft! En deel met collega\'s!');
+		if (pin === '2018') {
+			alert('Koko! Kijk in de kofferbak van de UP! Mail mij welke letter u gevonden heeft! (delen met collega\'s!');
 		} else {
 			pin = '-';
 		}
